@@ -48,9 +48,7 @@ class ViewController: UIViewController {
     }
 
     func createLocalRealm() throws -> Realm {
-        var config = self.config
-        config.fileURL = localRealmUrl
-        return try Realm(configuration: config)
+        return try Realm(configuration: localConfig)
     }
 
     func storeSomething() {
