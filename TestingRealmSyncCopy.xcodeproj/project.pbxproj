@@ -12,6 +12,8 @@
 		6A7F56821FDC39BC004E8DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7F56801FDC39BC004E8DC5 /* Main.storyboard */; };
 		6A7F56841FDC39BC004E8DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7F56831FDC39BC004E8DC5 /* Assets.xcassets */; };
 		6A7F56871FDC39BC004E8DC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7F56851FDC39BC004E8DC5 /* LaunchScreen.storyboard */; };
+		6A7F56911FDC3B90004E8DC5 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F56901FDC3B90004E8DC5 /* Thing.swift */; };
+		99FAEEB77A722EEB27CF9A71 /* Pods_TestingRealmSyncCopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2A7C5479617B221CF8FBF6 /* Pods_TestingRealmSyncCopy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,11 @@
 		6A7F56831FDC39BC004E8DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A7F56861FDC39BC004E8DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A7F56881FDC39BC004E8DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A7F568E1FDC3A0D004E8DC5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6A7F56901FDC3B90004E8DC5 /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		815025B2C2D6996721032A47 /* Pods-TestingRealmSyncCopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingRealmSyncCopy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestingRealmSyncCopy/Pods-TestingRealmSyncCopy.debug.xcconfig"; sourceTree = "<group>"; };
+		DD2A7C5479617B221CF8FBF6 /* Pods_TestingRealmSyncCopy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestingRealmSyncCopy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E290E8CF490BCC5276924E24 /* Pods-TestingRealmSyncCopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingRealmSyncCopy.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestingRealmSyncCopy/Pods-TestingRealmSyncCopy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FAEEB77A722EEB27CF9A71 /* Pods_TestingRealmSyncCopy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +46,11 @@
 		6A7F56701FDC39BB004E8DC5 = {
 			isa = PBXGroup;
 			children = (
+				6A7F568E1FDC3A0D004E8DC5 /* Podfile */,
 				6A7F567B1FDC39BC004E8DC5 /* TestingRealmSyncCopy */,
 				6A7F567A1FDC39BC004E8DC5 /* Products */,
+				6F08C43DD37601089E79CF3B /* Pods */,
+				E8813062D5874262D2917291 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +71,26 @@
 				6A7F56831FDC39BC004E8DC5 /* Assets.xcassets */,
 				6A7F56851FDC39BC004E8DC5 /* LaunchScreen.storyboard */,
 				6A7F56881FDC39BC004E8DC5 /* Info.plist */,
+				6A7F56901FDC3B90004E8DC5 /* Thing.swift */,
 			);
 			path = TestingRealmSyncCopy;
+			sourceTree = "<group>";
+		};
+		6F08C43DD37601089E79CF3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				815025B2C2D6996721032A47 /* Pods-TestingRealmSyncCopy.debug.xcconfig */,
+				E290E8CF490BCC5276924E24 /* Pods-TestingRealmSyncCopy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8813062D5874262D2917291 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A7C5479617B221CF8FBF6 /* Pods_TestingRealmSyncCopy.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A7F568B1FDC39BC004E8DC5 /* Build configuration list for PBXNativeTarget "TestingRealmSyncCopy" */;
 			buildPhases = (
+				330FB2F0FC3DFBEA71CD5CF7 /* [CP] Check Pods Manifest.lock */,
 				6A7F56751FDC39BC004E8DC5 /* Sources */,
 				6A7F56761FDC39BC004E8DC5 /* Frameworks */,
 				6A7F56771FDC39BC004E8DC5 /* Resources */,
+				734579B0DCC2BC888AACC0EF /* [CP] Embed Pods Frameworks */,
+				C4AC0F2D26AA388C560B1DDD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +163,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		330FB2F0FC3DFBEA71CD5CF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestingRealmSyncCopy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		734579B0DCC2BC888AACC0EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestingRealmSyncCopy/Pods-TestingRealmSyncCopy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestingRealmSyncCopy/Pods-TestingRealmSyncCopy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4AC0F2D26AA388C560B1DDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestingRealmSyncCopy/Pods-TestingRealmSyncCopy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A7F56751FDC39BC004E8DC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6A7F567F1FDC39BC004E8DC5 /* ViewController.swift in Sources */,
+				6A7F56911FDC3B90004E8DC5 /* Thing.swift in Sources */,
 				6A7F567D1FDC39BC004E8DC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +361,7 @@
 		};
 		6A7F568C1FDC39BC004E8DC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 815025B2C2D6996721032A47 /* Pods-TestingRealmSyncCopy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +377,7 @@
 		};
 		6A7F568D1FDC39BC004E8DC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E290E8CF490BCC5276924E24 /* Pods-TestingRealmSyncCopy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
