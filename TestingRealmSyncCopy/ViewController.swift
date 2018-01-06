@@ -13,7 +13,7 @@ import Realm.Dynamic
 class ViewController: UIViewController {
 
     let syncAuthURL = URL(string: "http://127.0.0.1:9080")!
-    let syncServerURL = URL(string: "realm://127.0.9.1:9080/~/copytest")!
+    let syncServerURL = URL(string: "realm://127.0.0.1:9080/~/copytest")!
 
     var localRealmUrl: URL {
         let documentsDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last!
